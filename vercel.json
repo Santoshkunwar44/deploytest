@@ -1,5 +1,10 @@
 {
-  "version": 2,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
   "builds": [{ "src": "next.config.js", "use": "@vercel/node" }],
   "routes": [{ "handle": "filesystem" }]
 }
